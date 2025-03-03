@@ -13,3 +13,8 @@
 *::after {
 	box-sizing: border-box;
 }
+
+p {
+	text-align: center;
+	background-color: aquamarine;
+}
