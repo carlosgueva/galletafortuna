@@ -2,7 +2,7 @@ import React from 'react';
 
 function PhraseCard({ phrase, author }) {
 	return (
-		<article>
+		<article className="phrase-card">
 			<q>{phrase}</q>
 			<p>
 				- <strong>{author}</strong>
