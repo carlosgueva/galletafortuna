@@ -43,8 +43,47 @@ button {
 	border-radius: 8px;
 	padding: 10px 0;
 	font-size: 0.9rem;
+
+    background: white;
+    color: rgb(3, 11, 173);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+button:hover {
+	transform: scale(1.1);
+    box-shadow: 5px 5px 4px purple;
+}
+
 
 p {
 	text-align: center;
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+p {
+    display: block;
+    white-space: nowrap;
+    width: 0;
+    max-width: max-content;
+    border-right: 2px solid;
+    animation: typing 2s infinite steps(15) alternate,
+		blink 0.3s infinite step-end alternate;
+    overflow: hidden;
+    quotes: none;
+}
+
